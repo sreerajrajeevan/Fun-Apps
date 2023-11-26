@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_button"
+    tools:context=".Page2">
+
+    <!-- Add your logo at the top of the page -->
+
+    <!-- User's Name -->
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/logowt" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logoImageView"
+        android:layout_marginTop="16dp"
+        android:hint="Name"
+        android:textColor="@color/black"
+        android:background="@drawable/rounded"
+        android:inputType="textPersonName"
+        android:padding="12dp"/>
+
+    <!-- User's Age -->
+    <EditText
+        android:id="@+id/ageEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameEditText"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded"
+        android:hint="Age"
+        android:inputType="number"
+        android:padding="12dp"/>
+
+    <!-- User's Gender (You can use a Spinner for more options) -->
+    <Spinner
+        android:id="@+id/genderEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ageEditText"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded"
+        android:padding="12dp"
+        android:spinnerMode="dropdown" />
+
+    <!-- Button to proceed -->
+    <Button
+        android:id="@+id/proceedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Proceed"
+        android:textColor="@color/my_button"
+        android:layout_below="@+id/genderEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"/>
+</RelativeLayout>
