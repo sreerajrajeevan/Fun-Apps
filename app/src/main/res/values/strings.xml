@@ -5,4 +5,12 @@
         <item>Female</item>
         <item>Others</item>
     </string-array>
+    <string name="name_hint">Name</string>
+    <string name="age_hint">Age</string>
+    <string name="proceed_button">Proceed</string>
+    <string name="logo_description">App Logo</string>
+    <string name="get_started">Get started</string>
+    <string name="choose_date_title">Choose your Date</string>
+    <string name="success_message">You chose your date successfully!</string>
+    <string name="celebration_emoji">🌸✨🌸✨🌸</string>
 </resources>

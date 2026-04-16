@@ -11,7 +11,13 @@
         android:theme="@style/Theme.ChooseYourDate">
         <activity
             android:name=".Page2"
-            android:exported="true" />
+            android:exported="false" />
+        <activity
+            android:name=".ChooseDateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CelebrationActivity"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

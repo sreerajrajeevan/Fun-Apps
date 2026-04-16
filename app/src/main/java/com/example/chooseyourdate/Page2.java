@@ -9,6 +9,9 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
+import android.widget.Button;
+import android.widget.EditText;
 
 public class Page2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -36,6 +39,22 @@ public class Page2 extends AppCompatActivity implements AdapterView.OnItemSelect
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
+        Button proceedButton = findViewById(R.id.proceedButton);
+        final EditText nameET = findViewById(R.id.nameEditText);
+        final EditText ageET = findViewById(R.id.ageEditText);
+
+        proceedButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (nameET.getText().toString().isEmpty() || ageET.getText().toString().isEmpty()) {
+                    Toast.makeText(Page2.this, "Please fill all fields", Toast.LENGTH_SHORT).show();
+                } else {
+                    Intent intent = new Intent(Page2.this, ChooseDateActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     @Override
